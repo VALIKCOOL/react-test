@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
+import { Grid } from 'react-bootstrap';
 import logo from './assets/logo.svg';
 import './styles/App.css';
-import MultiStepForm from "./MultiStepForm";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import MultiStepForm from "./modules/MultiStepForm";
 
 class App extends Component {
     render() {
         return (
             <div className="App">
-                <MultiStepForm />
+                <Grid>
+                    <MultiStepForm />
+                </Grid>
             </div>
         );
     }
